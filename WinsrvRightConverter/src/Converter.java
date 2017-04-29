@@ -1,12 +1,14 @@
 import java.io.*;
 
-
 public class Converter {
   private String inputName, outputName;
   public Converter(String fileName) {
     inputName = fileName;
     if(fileName.contains(".")){
       outputName = fileName.substring(0,fileName.indexOf('.')) + ".csv";
+    }
+    else{
+      outputName = filename + ".csv";
     }
   }
 
